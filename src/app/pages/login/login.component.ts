@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   }
 
   public login(email: string, password: string) {
-    this.router.navigate(['sidenav'], {replaceUrl: true});
+    this.router.navigate(['hos'], {replaceUrl: true});
   }
 
   ngOnInit() {

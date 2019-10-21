@@ -10,16 +10,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
   },
   {
-    path: 'sidenav',
+    path: 'hos',
     component: SidenavComponent,
     children: [
       {
-        path: 'page-one',
-        loadChildren: () => import ('./pages/page-one/page-one.module').then(m => m.PageOneModule)
+        path: 'dashboard',
+        loadChildren: () => import ('./pages/dashboard/dashboard.module').then(m => m.DashboardModule)
       },
       {
-        path: 'page-two',
-        loadChildren: () => import ('./pages/page-two/page-two.module').then(m => m.PageTwoModule)
+        path: 'questionnaires',
+        loadChildren: () => import ('./pages/questionnaires/questionnaires.module').then(m => m.QuestionnairesModule)
       },
       {
         path: 'page-three',
